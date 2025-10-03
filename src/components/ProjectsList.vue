@@ -1,21 +1,20 @@
 <template>
     <div>
       <div class="projects-list">
-        <template v-for="project in projects">
-          <div
-            :key="project.id"
-              @click="showDetails(project)"
-              class="project-item"
-              :class="{ 'wide': project.isWide, 'high': project.isHigh }">
-            <div class="project-item-image" :style="{ 'background-image': 'url(' + project.iconUrl + ')' }">
-            </div>
-            <div class="title-bar" :style="{ 'background-color': project.accentColor + 'DD' }">
-                <div class="title-text">
-                  {{ project.name }}
-                </div>
-              </div>
+        <div
+          v-for="project in projects"
+          :key="project.id"
+          @click="showDetails(project)"
+          class="project-item"
+          :class="{ 'wide': project.isWide, 'high': project.isHigh }">
+          <div class="project-item-image" :style="{ 'background-image': 'url(' + project.iconUrl + ')' }">
           </div>
-        </template>
+          <div class="title-bar" :style="{ 'background-color': project.accentColor + 'DD' }">
+              <div class="title-text">
+                {{ project.name }}
+              </div>
+            </div>
+        </div>
       </div>
 
       <ProjectDetailsOverlay
@@ -29,9 +28,9 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue, { PropType } from "vue";
 import ProjectDetailsOverlay from "@/components/ProjectDetailsOverlay.vue";
-import ProjectData from "@/data/ProjectData.ts";
+import ProjectData from "@/data/ProjectData";
 
 export default Vue.extend({
   name: "ProjectsList",
@@ -39,7 +38,10 @@ export default Vue.extend({
     ProjectDetailsOverlay,
   },
   props: {
-    projects: Array
+    projects: {
+      type: Array as PropType<ProjectData[]>,
+      required: true,
+    },
   },
   data: function () {
     return {
@@ -67,7 +69,7 @@ export default Vue.extend({
 <style scoped>
 
 .project-item {
-  height: 300px;
+  height: 380px;
   margin-bottom: 20px;
   width: 100%;
   cursor: pointer;
@@ -80,12 +82,12 @@ export default Vue.extend({
   background-position: center;
   height: 100%;
   width: 100%;
-  transition: all 0.2s;
+  transition: transform 0.25s ease;
 }
 .project-item-image:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .project-item:hover {
@@ -100,7 +102,9 @@ filter: brightness(120%);
 }
 
 .title-text {
-  padding: 10px;
+  padding: 14px;
+  font-size: 1.05rem;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 620px){
@@ -108,8 +112,8 @@ filter: brightness(120%);
     max-width: 900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 24px;
+    grid-auto-rows: minmax(320px, auto);
   }
 
   .project-item {
