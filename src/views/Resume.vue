@@ -1,106 +1,135 @@
 <template>
   <div>
-    <h1>Resume</h1>
+    <h1>Gabriele Minneci — Resume</h1>
 
     <div class="paragraph">
-      I'm <strong>John Matrix</strong>, a former Delta Force operative with lots of experience, lots of training and huge muscles.
-      <br />After graduating from kindergarten, I've been enrolled in the army for 25 years, where I learned to destroy things in an amazing number of ways.
-      <br />I joined the Delta Force because I thought it was Greek lessons, but I quickly adapted to this unexpected environment and became a key element.
-      <br />I love teamwork, but I can also go in solo depending on the mission requirements.
-      <br />
-      <br />Right now I'm trying to find inner peace after I've read some personal development books. I'm looking for a monk job so if you have any opportunity feel free to 
-      <router-link to="/contact">contact me</router-link>.
-      <br />
-      <br />Besides war, I'm passionate about firearms, martial arts, explosions, push-ups and flowers.
+      <h2><strong>SOFTWARE ENGINEER</strong></h2>
+      <div style="margin-top:3%;">
+        Gameplay programmer with 6+ years in professional game development and solid experience in AAA production.
+        Specialized in gameplay systems (3C, animation, tools), passionate about graphics and procedural technologies.
+        Proven ability to bring features from prototype to shipping within cross-functional teams.
+        Currently working at Ubisoft Milan as Mid Gameplay Programmer, contributing to multiple videogames. Previously worked at Zuru Tech Italy as Software Engineer, developing a UE4-based CAD/BIM product.
+      </div>
 
       <div style="margin-top:20px; margin-bottom:20px;">
-        <a class="download-link" href="d/resume-en.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download as PDF 🇬🇧</a>
-        <a class="download-link" href="d/cv-fr.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Télécharger en PDF 🇫🇷</a>
+        <a class="download-link" href="#resume-pdf"><i class="fa fa-file-pdf-o fa-lg fa-fw"></i> View PDF</a>
+        <a class="download-link" href="/d/resume.pdf" target="_blank" style="margin-left:12px;"><i class="fa fa-download fa-lg fa-fw"></i> Open / Download</a>
         <div style="clear:both"></div>
       </div>
-    </div>
-    <div class="photo">
-      <img src="img/resume-photo.png" alt="Photo of John" />
     </div>
 
     <div style="clear:both"></div>
 
     <div class="full-content">
-      <h2>Work experience</h2>
-
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2018-2019</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2015-2017</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Even more Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2012-2015</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
       <h2>Skills</h2>
+      <div class="skill-set">
+        <h3>Technologies</h3>
+        <SkillRate name="UE4/5" :rate="4" />
+        <SkillRate name="Unity3D (2018)" :rate="3" />
+        <SkillRate name="Snowdrop" :rate="4" />
+        <SkillRate name="ARCore" :rate="2" />
+        <SkillRate name="Vuforia" :rate="2" />
+        <SkillRate name="Jira" :rate="4" />
+        <SkillRate name="Perforce" :rate="5" />
+        <SkillRate name="Git" :rate="5" />
+        <SkillRate name="Microsoft Kinect 2" :rate="3" />
+        <SkillRate name="Visual Studio" :rate="5" />
+        <SkillRate name="Gitlab" :rate="4" />
+      </div>
 
       <div class="skill-set">
-        <h3>Lethal</h3>
-        <SkillRate name="Handguns" :rate="5" />
-        <SkillRate name="Rifles" :rate="5" />
-        <SkillRate name="Shotguns" :rate="5" />
-        <SkillRate name="Machineguns" :rate="5" />
-        <SkillRate name="Missile launchers" :rate="5" />
-        <SkillRate name="Knives" :rate="5" />
-        <SkillRate name="Hand to hand combat" :rate="5" />
+        <h3>Programming Languages</h3>
+        <SkillRate name="C++" :rate="4" />
+        <SkillRate name="C#" :rate="3" />
+        <SkillRate name="C" :rate="3" />
+        <SkillRate name="Python" :rate="3" />
+        <SkillRate name="WebGL" :rate="3" />
+        <h3>Languages</h3>
+        <SkillRate name="Italian (native)" :rate="5" />
+        <SkillRate name="English (professional)" :rate="5" />
       </div>
 
-      <div class="skill-set">
-        <h3>Non-lethal</h3>
-        <SkillRate name="Sneaking" :rate="1" />
-        <SkillRate name="Negotiation" :rate="1" />
-        <SkillRate name="Seduction" :rate="1" />
-        <SkillRate name="Sense of humor" :rate="2" />
+      <div style="clear:both"></div>
+
+      <div class="paragraph">
+        <h2>Work Experience</h2>
+
+        <h3>Mid Gameplay Programmer — Ubisoft Milano</h3>
+        <h4>2024/06 – present</h4>
+        <p><strong>Avatar: From the Ashes </strong>— from prototype to shipping</p>
+        <ul>
+          <li>Feature owner, inter-department co-coordinator for the features</li>
+          <li>Boss battle 3C</li>
+        </ul>
+
+        <p><strong> Star wars Outlaws</strong></p>
+        <ul>
+          <li>Binocular system owner from L1 to shipping: multistreaming, FoV, memory optimization, LoDs</li>
+          <li>Other features: 3C, animation, locomotion</li>
+        </ul>
+
+        <h3>Junior Gameplay Programmer — Ubisoft Milano</h3>
+        <h4>2022/01 – 2024/05</h4>
+        <p><strong>Mario+Rabbids Sparks of Hope and Star Wars Outlaws</strong></p>
+        <p>Cross-department development of gameplay features. Ability to work on huge projects and deliver required features on time.</p>
+
+        <h3>Mid Software Engineer — Zuru Tech Italy</h3>
+        <h4>2021/07 – 2021/12</h4>
+        <p>Developed UE4 based CAD/BIM product, refactored architecture, procedural mesh tools.</p>
+
+        <h3>Junior Software Engineer — Zuru Tech Italy</h3>
+        <h4>2019/04 – 2021/06</h4>
+
+        <h3>Collaborator for M.Sc. thesis — Fraunhofer Italia</h3>
+        <h4>2018/04 – 2018/08</h4>
+        <p>Android Mixed Reality Application for buildings: indoor localization (Google ARCore, Unity, Computer Vision)</p>
       </div>
-      <div style="clear:both" />
 
-      <h2>Education</h2>
-
-      <h3>Kindergarten - 1985</h3>
-      <h4>Kindergarten degree</h4>
-      <div>Specialty in bullying and fighting (58 wins, 58 K-O, 0 losses)</div>
-
-      <h2>Languages</h2>
-
-      <h3>American</h3>
-      <div>Basic knowledge but I know lots of one-liners</div>
-
-      <h3>That's it</h3>
-      <div>Who needs another language when you speak American?</div>
-
-
-      <h2>Besides...</h2>
-      <div>
-        <h3>I ❤️ Violence</h3>
-        <div>I find it really soothing to just shoot at bad guys</div>
-
-        <h3>I 🧡 Sports</h3>
-        <div>I used to be thin but then I ingested 10 kilos of steroids and proteins a day while doing 1000 push-ups.</div>
-
-        <h3>I 💛 Politics</h3>
-        <div>I hope I can have a career here someday but I might have temper issues.</div>
-
-        <h3>I 💚 Flowers</h3>
-        <div>Especially the big ones, with the trunk and leaves.</div>
-
+      <div class="paragraph">
+        <h2>Projects & Research</h2>
+        <ul>
+          <li>Marble Garden — videogame (unpublished) 2019/07 – 2020/12</li>
+          <li>Master Thesis — AR localization with Unity & ARCore (Fraunhofer) — Apr 2018 – Oct 2018</li>
+          <li>Bachelor Thesis — Gaze estimation with Kinect v2 — Mar 2016 – Jul 2016</li>
+          <li>Procedural objects — Procedural planets and Infinite terrain generation (UE4 and noise algorithms) — personal projects</li>
+        </ul>
       </div>
+
+      <div class="paragraph">
+        <h3>Certificates</h3>
+        <div>Italian qualification to practice the profession of Informatics Engineer</div>
+      </div>
+
+      <div class="paragraph">
+        <h2>Education</h2>
+        <p>M.Sc. in Computer Science: Software Engineering & IT Management — Free University of Bolzano — 109/110 (2016/10 – 2018/10)</p>
+        <p>B.Sc. in Informatic Engineering — University of Florence — 96/110 (2011/10 – 2016/07)</p>
+        <p>High School Diploma, Liceo Scientifico Guido Castelnuovo (2006 – 2011)</p>
+      </div>
+
+      <div class="paragraph">
+        <h2>Interests</h2>
+        <ul>
+          <li>Videogames</li>
+          <li>Software Engineering, Graphics & Procedural Programming</li>
+          <li>3D Math, AR/VR/XR</li>
+        </ul>
+      </div>
+
+      <div class="paragraph">
+        <h2>Leisure Time</h2>
+        <p>
+          I mainly play videogames; they are my passion and I love going in other worlds with them. I like being in nature, feel it and understand it: a good walking heals me in many ways. I’m a curious person, I want to understand the world more and more! I am a good listener and I try to learn from anyone I meet. I love technology and I follow how it continuously improves, I discuss about the new inventions and how they can be used, from ethical to practical. I improve my programming skills in the free time, following the latest updates from C++ and GDC.
+        </p>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+    <div id="resume-pdf" class="pdf-embed-wrapper">
+      <h2 style="margin-bottom: 3%;">Resume (PDF)</h2>
+      <object class="pdf-embed" data="/d/resume.pdf" type="application/pdf">
+        <p>Your browser does not support PDFs. You can <a href="/d/resume.pdf" target="_blank">download the PDF</a> instead.</p>
+      </object>
     </div>
   </div>
 </template>
@@ -142,16 +171,17 @@ h4 {
 }
 
 .paragraph {
-  max-width: 700px;
+  max-width: 900px;
+  margin-bottom: 20px;
 }
 
 .download-link {
-  float:left;
+  float: left;
   margin-right: 50px;
 }
 
 .full-content div {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .skill-set h3 {
@@ -172,7 +202,16 @@ h4 {
   text-align: center;
 }
 
-@media only screen and (min-width: 620px){
+.pdf-embed-wrapper {
+  margin-top: 3%;
+}
+.pdf-embed {
+  width: 100%;
+  min-height: 700px;
+  border: 1px solid #ddd;
+}
+
+@media only screen and (min-width: 620px) {
   .paragraph {
     float: left;
   }
@@ -185,7 +224,7 @@ h4 {
 
   .skill-set {
     float: left;
-    padding-right: 60px; 
+    padding-right: 60px;
   }
 }
 </style>

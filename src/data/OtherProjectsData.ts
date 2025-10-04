@@ -20,9 +20,8 @@ export default [
     Source code available on <a href="https://gitlab.com/minnes/proceduralplanet" target="_blank">GitLab</a>.
     </div>
     <div class="paragraph center">
-    <img class="pc-screenshot" src="img/projects/proc-planets.png" alt="Sultans Of Sing Screenshot" />
-    <img class="pc-screenshot" src="img/projects/proc-water-planets" alt="Sultans Of Sing Screenshot" />
-    <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Sultans Of Sing Screenshot" /> 
+    <img class="pc-screenshot" src="img/projects/proc-planets.png" alt="Procedural planets" />
+    <img class="pc-screenshot" src="img/projects/proc-water-planets.png" alt="planets water" />
     </div>
   </div>
   `, "#0699c1ff", false, false),
@@ -43,7 +42,7 @@ export default [
 
       <div class="paragraph">
         <div class="notice">
-        You can download and try the game for free <a href="https://v3.globalgamejam.org/2023/games/shroomies-8" target="_blank">the Global Game Jam website</a>
+        You can download and try the game for free at <a href="https://v3.globalgamejam.org/2023/games/shroomies-8" target="_blank">the Global Game Jam website</a>
         You can find the source code on <a href="https://gitlab.com/Faust91/goodgamejami.git" target="_blank">GitLab</a>.
         </div>
       </div>
@@ -63,7 +62,9 @@ export default [
         With <strong>Procedural Landscape</strong> 
         I explored an infinite world creation, where I experimented with procedural generation of terrain.
       </div>
-
+      <div class="paragraph center">
+        <iframe class="youtube" src="https://youtu.be/b3NocuU622A" frameborder="0" allowfullscreen></iframe>
+      </div>
       <div class="paragraph">
     Main features :
     <ul>

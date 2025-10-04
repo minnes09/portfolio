@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="center-div">
       <h1>Hello! I'm Gabriele Minneci</h1>
 
       <div class="paragraph">
@@ -14,7 +13,6 @@
 
       <div style="clear:both"></div>
 
-    </div>
     
     <h1 class="center-div">Videogames</h1>
     <div class="projects-div">
@@ -75,16 +73,12 @@
 }
 .center-div {
   margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
   width: 80%; /* or any width */
 }
 .projects-div{
   width: 100%;
   padding-top: 10px;
   padding-bottom: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 .photo {
   margin-top: 50px;

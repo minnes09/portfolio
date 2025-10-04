@@ -43,6 +43,7 @@ Helpers.preloadImages([
 html, body {
   margin: 0px;
   background-color: @bodyBgColor;
+  scroll-behavior: smooth;
 }
 
 #app {
