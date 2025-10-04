@@ -30,7 +30,7 @@ export default [
         <strong>Shroomies</strong> Global Game Jam 2023 in the Turin hub. Made in 48h with a team of 12 people.
       </div>
 <div class="paragraph center">
-    <iframe class="youtube" src="https://youtu.be/PY2ClC3uFak" frameborder="0" allowfullscreen></iframe>
+  <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/PY2ClC3uFak" frameborder="0" allowfullscreen></iframe>
   </div>
       <div class="paragraph">
         Main features :
@@ -54,7 +54,7 @@ export default [
       </div>
 
       <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/watch?v=Mm_yN947eYM" frameborder="0" allowfullscreen></iframe>
+  <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/Mm_yN947eYM" frameborder="0" allowfullscreen></iframe>
       </div>
   </div>`, "#237062ff"),
   new ProjectData("project-9", "Procedural Landscape", "img/projects/ProceduralGame.png", `
@@ -63,7 +63,7 @@ export default [
         I explored an infinite world creation, where I experimented with procedural generation of terrain.
       </div>
       <div class="paragraph center">
-        <iframe class="youtube" src="https://youtu.be/b3NocuU622A" frameborder="0" allowfullscreen></iframe>
+  <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/b3NocuU622A" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="paragraph">
     Main features :

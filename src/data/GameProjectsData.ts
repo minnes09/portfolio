@@ -7,7 +7,7 @@ export default [
      <strong>Avatar: From the Ashes</strong> Last expansion in the beautiful world of Pandora. Current project as a gameplay programmer in Ubisoft Milan
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/watch?v=24Lc7E-Vt80" frameborder="0" allowfullscreen></iframe>
+    <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/24Lc7E-Vt80" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="paragraph center">
         <a href="https://www.ubisoft.com/en-gb/game/avatar/frontiers-of-pandora" target="_blank">See on Ubisoft website</a>
@@ -34,7 +34,7 @@ export default [
         <strong>Star wars outlaws</strong> Open world in the Star wars universe, what a journey! Worked as gameplay programmer in Ubisoft Milan
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/watch?v=HlfuN4yj3yg frameborder="0" allowfullscreen></iframe>
+    <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/HlfuN4yj3yg" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="paragraph center">
@@ -69,7 +69,7 @@ export default [
         <strong>Mario + Rabbids Sparks of Hope</strong> A tactical RPG in the Mario universe, what a ride! Worked as junior gameplay programmer in Ubisoft Milan. I contributed to the main game and the 3 DLCs. The only 3rd party game in the Mario universe.
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/watch?v=PKch2n9X3jI" frameborder="0" allowfullscreen></iframe>
+    <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/PKch2n9X3jI" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="paragraph center">
